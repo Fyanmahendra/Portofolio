@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 import Circles from '../../components/Circles';
+import Image from 'next/image';
 
 const CV = () => {
   return (
@@ -18,9 +19,11 @@ const CV = () => {
         <p className="text-center text-md sm:text-lg mb-4">Software Developer Enthusiast</p>
 
         <div className="flex justify-center mb-6">
-          <img
+          <Image
             src="/cv-preview.png"
             alt="CV Preview"
+            width={320}  
+            height={400}  
             className="w-64 sm:w-80 border rounded-lg shadow-lg"
           />
         </div>
