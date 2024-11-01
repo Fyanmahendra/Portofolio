@@ -11,9 +11,9 @@ export const aboutData = [
       {
         title: 'Software Developer Enthusiast',
         description:
-          `Hi, I’m Sofyan Mahendra! A software developer enthusiast who loves turning 
+          `Hi, Im Sofyan Mahendra! A software developer enthusiast who loves turning 
           ideas into interactive web experiences. I enjoy exploring the latest tech 
-          and crafting seamless designs that feel as good as they look. Let’s build 
+          and crafting seamless designs that feel as good as they look. Lets build 
           something awesome!`,
       },
     ],
