@@ -8,11 +8,11 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
-  const [isSubmitted, setIsSubmitted] = useState(false); 
-  const [error, setError] = useState(''); 
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
   const handleSubmit = (event) => {
-    event.preventDefault(); 
+    event.preventDefault();
 
     if (!name || !email || !subject || !message) {
       setError('Please fill in all fields.');
@@ -34,7 +34,7 @@ const Contact = () => {
 
     setTimeout(() => {
       setIsSubmitted(false);
-    }, 60000); 
+    }, 60000);
   };
 
   return (
@@ -48,7 +48,7 @@ const Contact = () => {
             animate="show"
             exit="hidden"
           >
-            Lets <span className="text-accent">connect</span>
+            Let&apos;s <span className="text-accent">connect</span>
           </motion.h2>
 
           <form onSubmit={handleSubmit} className="flex-1 flex flex-col gap-6 w-full mx-auto">
@@ -81,14 +81,14 @@ const Contact = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
-            {error && <p className="text-red-500">{error}</p>} 
+            {error && <p className="text-red-500">{error}</p>}
             <button
               type="submit"
               className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
-              disabled={isSubmitted} 
+              disabled={isSubmitted}
             >
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                {isSubmitted ? 'Sending...' : "Let's talk"}
+                {isSubmitted ? 'Sending...' : "Lets talk"}
               </span>
               <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
             </button>
